@@ -188,15 +188,56 @@
 //   console.log(`${index + 1}番目は${nameArr[index]}です`);
 // }
 
-const nameArr = ["田中", "山田", "田坂"];
-// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
-const newNameArr = nameArr.map((name) => {
-  if (name === "田坂") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNameArr);
+// const nameArr = ["田中", "山田", "田坂"];
+// // nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "田坂") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
 
-newNameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+// newNameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+
+/**
+ * 三項演算子
+ */
+// const val1 = 1 > 0 ? "trueです" : "falseですねん";
+// console.log(val1);
+
+// const num = "1300";
+// // console.log(num.toLocaleString());
+
+// const formattedNum =
+//   typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
+// console.log(formattedNum);
+
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100超えたぞボケ" : "許容範囲やで";
+// }
+// console.log(checkSum(100,1))
+
+/**
+ * 論理演算しの本当の意味
+ */
+// const flag1 = true;
+// const flag2 = false;
+
+// if(flag1 || flag2) {
+//   console.log("1か2がtrueです");
+// }
+// if(flag1 && flag2) {
+//   console.log("1も2もtrueです");
+// }
+
+// ||は左側がfalseなら右側を返すという意味になる
+// const num = 100;
+// const fee = num || "金額未設定です"; // numがnull(false)なら右の文字列出力、numに何らかあるとそれを出す
+// console.log(fee);
+
+// &&は左側がtrueなら右側を返すという意味になる
+// const num2 = 100;
+// const fee2 = num2 && "何か設定されましたよ";
+// console.log(fee2);
